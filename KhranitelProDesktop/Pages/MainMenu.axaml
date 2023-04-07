@@ -1,0 +1,27 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="KhranitelProDesktop.Pages.MainMenu">
+    <Grid RowDefinitions="*, Auto">
+        <DataGrid Name="MainDg" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Type.Name}" Header="Type"/>
+                
+                <DataGridTextColumn Binding="{Binding Employee.Division.Name}" Header="Division"/>
+                
+                <DataGridTextColumn Binding="{Binding Visitdate,StringFormat='{}{0:dd/MM/yyyy}'}" Header="FinalDate"/>
+                <DataGridTextColumn Binding="{Binding Time}" Header="Time"/>
+                <DataGridTextColumn Binding="{Binding Status.Name}" Header="Status"/>
+                <DataGridTextColumn Binding="{Binding StatusReason}" Header="Status Reason"/>
+                
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <Button Name="OrderBtn" Content="Подать личную заявку" Width="Nan" Click="OrderBtn_OnClick"/>
+            <Button Name="GroupOrdBtn" Content="Подать груп. заявку" Width="nan" Click="GroupOrdBtn_OnClick"/>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

@@ -1,0 +1,135 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="KhranitelProDesktop.Pages.GroupRequestPage">
+    <Grid Name="VisitGrid" RowDefinitions="Auto, Auto, *, Auto, *, Auto, Auto" ColumnDefinitions="*, 130, *">
+        <Label Width="NaN" Content="Форма записи на посещение мероприятия" Grid.ColumnSpan="3"/>
+        
+        <Border Grid.Row="1" Background="#FF6600">
+            <Label Grid.Row="1" Content="Информация для пропуска" Width="NaN"  />
+        </Border>
+        
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                    Background="lightgray" Grid.Row="2">
+            <Label Content="Срок действия заявок:" Width="nan"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Content="с*:" Width="nan" Margin="0"/>
+                <CalendarDatePicker Name="FromDp" SelectedDate="{Binding Startdate}" Margin="0" SelectedDateChanged="FromDp_OnSelectedDateChanged"/>
+                <Label Width="nan" Content="по" Margin="0"/>
+                <CalendarDatePicker Name="ToDp" SelectedDate="{Binding Enddate}" Margin="0"/>
+            </StackPanel>
+            <Label Content="Цель посещения:" Width="nan"/>
+            <ComboBox Name="TargetCbx" SelectedItem="{Binding Target}" Width="nan" HorizontalAlignment="Stretch">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        
+        <Border Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1" Background="#FF6600" Margin="5, 0">
+            <Label Grid.Row="1" Content="Принимающая сторона" Width="NaN"  />
+        </Border>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                    Background="lightgray" Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1" Margin="5, 0">
+            
+            <Label Content="Подразделение*:" HorizontalAlignment="Left" Width="Nan"/>
+            <ComboBox Name="DivisionCbx" SelectedItem="{Binding Employee.Division}" Width="nan" SelectionChanged="DivisionCbx_OnSelectionChanged" HorizontalAlignment="Stretch">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Label Content="ФИО*:" HorizontalAlignment="Left" Width="Nan"/>
+            <Grid ColumnDefinitions="*, Auto">
+                <ComboBox Name="NameCbx" SelectedItem="{Binding Employee}" Width="nan" HorizontalAlignment="Stretch">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}"></TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Image Height="32" Source="/Images/User.jpg" Grid.Column="1"/>
+            </Grid>
+            
+        </StackPanel>
+        
+        <Border Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="0" Background="#FF6600" Margin="5, 0">
+            <Label Grid.Row="1" Content="Информация о посетителе" Width="NaN"  />
+        </Border>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                    Background="lightgray" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0" Margin="5, 0">
+            <Grid Name="VisitorGrid" RowDefinitions="*, *, *, *, *, Auto" ColumnDefinitions="100, *, 100 , *, *">
+                <Label Content="Фамилия*:" Grid.Row="0" Grid.Column="0"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Lastname}"/>
+                <Label Content="Имя*:" Grid.Row="1" Grid.Column="0"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Firstname}"/>
+                <Label Content="Отчество*:" Grid.Row="2" Grid.Column="0"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Surname}"/>
+                <Label Content="Телефон:" Grid.Row="3" Grid.Column="0"/>
+                <MaskedTextBox Grid.Row="3" Grid.Column="1" Text="{Binding Phone}" Mask="+7 (000) 000-00-00"/>
+                <Label Content="E-mail:" Grid.Row="4" Grid.Column="0"/>
+                <TextBox Name="EmailTbx" Grid.Row="4" Grid.Column="1" Text="{Binding Email}"/>
+                
+                <Label Content="Организация:" Grid.Row="0" Grid.Column="2"/>
+                <TextBox Grid.Row="0" Grid.Column="3" Text="{Binding Organisation}"/>
+                <Label Content="Примечание:" Grid.Row="1" Grid.Column="2"/>
+                <TextBox Grid.Row="1" Grid.Column="3" Text="{Binding Remark}"/>
+                <Label Content="Дата рождения:" Grid.Row="2" Grid.Column="2"/>
+                <CalendarDatePicker Name="BirthDp" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="3" SelectedDate="{Binding Birthdate}"/>
+                <Label Content="Серия:" Grid.Row="3" Grid.Column="2"/>
+                <MaskedTextBox Mask="0000" Grid.Row="3" Grid.Column="3" Text="{Binding Passportserial}"/>
+                <Label Content="Номер:" Grid.Row="4" Grid.Column="2"/>
+                <MaskedTextBox Mask="000000" Grid.Row="4" Grid.Column="3" Text="{Binding Passportnumber}"/>
+                <Button Content="Добавить посетителя" Width="тфт" Grid.Row="5" Grid.Column="3" Background="White">
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="#FF6600"></SolidColorBrush>
+                    </Button.BorderBrush>
+                </Button>
+                
+            </Grid>
+        </StackPanel>
+        
+        <Border Grid.Row="3" Grid.ColumnSpan="1" Grid.Column="2" Background="#FF6600" Margin="5, 0">
+            <Label Grid.Row="1" Content="Информация о посетителе" Width="NaN"  />
+        </Border>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                    Background="lightgray" Grid.Row="4" Grid.ColumnSpan="1" Grid.Column="2" Margin="5, 0">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Загрузить список" Width="nan"/>
+                <Button Content="Скачать шаблон списка" Width="nan"/>
+            </StackPanel>
+            <DataGrid AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="№"/>
+                    <DataGridTextColumn Header="ФИО"/>
+                    <DataGridTextColumn Header="Контакты"/>
+                    <DataGridTextColumn Header="Фото"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        
+        <Border Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0" Background="#FF6600" Margin="5, 0">
+            <Label Grid.Row="1" Content="Прикрепляемые документы" Width="NaN"  Height="nan" />
+        </Border>
+        
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                    Background="lightgray" Grid.Row="6" Grid.ColumnSpan="2" Grid.Column="0" Margin="5, 0">
+            <Button Content="Прикрепить файл" Width="nan" Name="DocsBtn" Click="DocsBtn_OnClick" HorizontalAlignment="Left"></Button>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="2" HorizontalAlignment="Right">
+            <Button Content="Очистить форму" Width="Nan" Name="ClearBtn" Background="White"/>
+            
+            <Button Content="Оформить" Name="OkBtn" Click="OkBtn_OnClick" Background="White">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="#FF6600"></SolidColorBrush>
+                </Button.BorderBrush>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
