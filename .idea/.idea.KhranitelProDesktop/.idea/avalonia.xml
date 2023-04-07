@@ -3,9 +3,12 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="KhranitelProDesktop/App.axaml" value="KhranitelProDesktop/KhranitelProDesktop.csproj" />
         <entry key="KhranitelProDesktop/KeeperWindow.axaml" value="KhranitelProDesktop/KhranitelProDesktop.csproj" />
+        <entry key="KhranitelProDesktop/Pages/Auth.axaml" value="KhranitelProDesktop/KhranitelProDesktop.csproj" />
         <entry key="KhranitelProDesktop/Pages/GroupRequestPage.axaml" value="KhranitelProDesktop/KhranitelProDesktop.csproj" />
         <entry key="KhranitelProDesktop/Pages/MainMenu.axaml" value="KhranitelProDesktop/KhranitelProDesktop.csproj" />
+        <entry key="KhranitelProDesktop/Pages/OrderEdit.axaml" value="KhranitelProDesktop/KhranitelProDesktop.csproj" />
         <entry key="KhranitelProDesktop/Pages/RequestPage.axaml" value="KhranitelProDesktop/KhranitelProDesktop.csproj" />
       </map>
     </option>

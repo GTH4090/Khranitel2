@@ -153,7 +153,6 @@ public partial class KeeperDbContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Visits)
                 .HasForeignKey(d => d.Userid)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("visit_fk_1");
         });
 
@@ -173,6 +172,7 @@ public partial class KeeperDbContext : DbContext
             entity.Property(e => e.Firstname)
                 .HasMaxLength(50)
                 .HasColumnName("firstname");
+            entity.Property(e => e.Isbanned).HasColumnName("isbanned");
             entity.Property(e => e.Lastname)
                 .HasMaxLength(50)
                 .HasColumnName("lastname");

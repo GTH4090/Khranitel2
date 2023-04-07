@@ -7,16 +7,12 @@
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Orientation="Horizontal">
-                <Label Content="Login"/>
+                <Label Content="Код"/>
                 <TextBox Name="LoginTbx"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Password"/>
-                <TextBox Name="PasswordTbx" PasswordChar="*"/>
-                <CheckBox Name="PasCb" Checked="PasCb_OnChecked" Unchecked="PasCb_OnUnchecked"/>
-            </StackPanel>
+            
             <Button Name="LoginBtn" Content="Авторизоваться" Click="LoginBtn_OnClick"/>
-            <Button Name="RegBtn" Content="Регистрация" Click="RegBtn_OnClick"/>
+            
         </StackPanel>
     </Grid>
 </UserControl>

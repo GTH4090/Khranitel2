@@ -33,5 +33,7 @@ public partial class Visitor
 
     public string? Remark { get; set; }
 
+    public bool Isbanned { get; set; }
+
     public virtual Visit Visit { get; set; } = null!;
 }

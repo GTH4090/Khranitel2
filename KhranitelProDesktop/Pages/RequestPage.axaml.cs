@@ -57,6 +57,7 @@ public partial class RequestPage : UserControl
         
         (VisitGrid.DataContext as Visit).Typeid = 1;
         (VisitGrid.DataContext as Visit).Statusid = 1;
+        (VisitorGrid.DataContext as Visitor).Isbanned = false;
     }
 
     public RequestPage()
@@ -135,7 +136,7 @@ public partial class RequestPage : UserControl
                 (VisitorGrid.DataContext as Visitor).Visitid = (VisitGrid.DataContext as Visit).Id;
                 Db.Visitors.Add(VisitorGrid.DataContext as Visitor);
                 Db.SaveChanges();
-                Navigationn.Content = new MainMenu(_id);
+                Navigationn.Content = new MainMenu();
             }
             else
             {

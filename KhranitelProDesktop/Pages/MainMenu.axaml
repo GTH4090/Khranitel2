@@ -4,8 +4,35 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="KhranitelProDesktop.Pages.MainMenu">
-    <Grid RowDefinitions="*, Auto">
-        <DataGrid Name="MainDg" AutoGenerateColumns="False" IsReadOnly="True">
+    <Grid RowDefinitions="Auto, *, Auto">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Тип:"/>
+            <ComboBox Name="TypeCbx" SelectionChanged="TypeCbx_OnSelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Label Content="Статус:"/>
+            <ComboBox Name="StatusCbx" SelectionChanged="StatusCbx_OnSelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Label Content="Подразделение:"/>
+            <ComboBox Name="DevisionCbx" SelectionChanged="StatusCbx_OnSelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        
+        <DataGrid Name="MainDg" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Type.Name}" Header="Type"/>
                 
@@ -18,9 +45,18 @@
                 
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center">
+            <Label Content="User:"/>
+            <ComboBox Name="UserCbx">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Login}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
             <Button Name="OrderBtn" Content="Подать личную заявку" Width="Nan" Click="OrderBtn_OnClick"/>
             <Button Name="GroupOrdBtn" Content="Подать груп. заявку" Width="nan" Click="GroupOrdBtn_OnClick"/>
+            <Button Name="EditBtn" Content="Формальная проверка" Width="nan" Click="EditBtn_OnClick"/>
         </StackPanel>
         
     </Grid>

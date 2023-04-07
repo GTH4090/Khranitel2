@@ -4,7 +4,33 @@
     <projectFile>KhranitelProDesktop/KhranitelProDesktop.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53811293-8882-4522-80ba-0e964746fcd9" name="Changes" comment="" />
+    <list default="true" id="53811293-8882-4522-80ba-0e964746fcd9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/KhranitelProDesktop/Pages/OrderEdit.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KhranitelProDesktop/Pages/OrderEdit.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.KhranitelProDesktop/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KhranitelProDesktop/.idea/avalonia.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.KhranitelProDesktop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KhranitelProDesktop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/App.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/App.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/Models/KeeperDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/Models/KeeperDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/Models/Visit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/Models/Visit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/Models/Visitor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/Models/Visitor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/Pages/Auth.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/Pages/Auth.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/Pages/Auth.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/Pages/Auth.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/Pages/GroupRequestPage.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/Pages/GroupRequestPage.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/Pages/GroupRequestPage.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/Pages/GroupRequestPage.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/Pages/MainMenu.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/Pages/MainMenu.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/Pages/MainMenu.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/Pages/MainMenu.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/Pages/RequestPage.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/Pages/RequestPage.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/bin/Debug/net7.0/KhranitelProDesktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/bin/Debug/net7.0/KhranitelProDesktop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/bin/Debug/net7.0/KhranitelProDesktop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/bin/Debug/net7.0/KhranitelProDesktop.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/Avalonia/original.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/Avalonia/original.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/Avalonia/original.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/Avalonia/original.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/Avalonia/resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/KhranitelProDesktop.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/KhranitelProDesktop.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/KhranitelProDesktop.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/KhranitelProDesktop.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/ref/KhranitelProDesktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/ref/KhranitelProDesktop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/refint/KhranitelProDesktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KhranitelProDesktop/obj/Debug/net7.0/refint/KhranitelProDesktop.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +39,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/293a727da28b76459cba0df67fa35bfd96b32864a2ff663f379d4308c2c5a50/ParameterExtractingExpressionVisitor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7b3b6985aad11c5d633d75b545f5f5f4fc7e50918ad1cb9f6b615682f5bfb76d/SingleQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/abd96e92445cd4174ecc2b949cd389936c6a2febaa1b18604928d4a4d42e72a0/Interactive.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2Np30OE4ISsb26IGOLR3sEH7IUG" />
@@ -72,6 +102,8 @@
       <workItem from="1680419811219" duration="12450000" />
       <workItem from="1680619596134" duration="10575000" />
       <workItem from="1680879060033" duration="4670000" />
+      <workItem from="1680883796570" duration="5662000" />
+      <workItem from="1680889481029" duration="3003000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1680353678367</created>
@@ -101,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680883642246</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="123223">
+      <created>1680883837647</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680883837647</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +154,26 @@
     <MESSAGE value="Я сделал половину первой сессии :)" />
     <MESSAGE value="2343" />
     <MESSAGE value="123232" />
-    <option name="LAST_COMMIT_MESSAGE" value="123232" />
+    <MESSAGE value="123223" />
+    <option name="LAST_COMMIT_MESSAGE" value="123223" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/KhranitelProDesktop/Pages/OrderEdit.axaml.cs</url>
+          <line>21</line>
+          <properties documentPath="$PROJECT_DIR$/KhranitelProDesktop/Pages/OrderEdit.axaml.cs" initialLine="21" containingFunctionPresentation="constructor 'OrderEdit'">
+            <startOffsets>
+              <option value="508" />
+            </startOffsets>
+            <endOffsets>
+              <option value="530" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

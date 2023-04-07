@@ -7,7 +7,7 @@ public partial class Visit
 {
     public int Id { get; set; }
 
-    public int Userid { get; set; }
+    public int? Userid { get; set; }
 
     public DateTime Startdate { get; set; }
 
@@ -37,7 +37,7 @@ public partial class Visit
 
     public virtual Visittype Type { get; set; } = null!;
 
-    public virtual User User { get; set; } = null!;
+    public virtual User? User { get; set; }
 
     public virtual ICollection<Visitor> Visitors { get; } = new List<Visitor>();
 }

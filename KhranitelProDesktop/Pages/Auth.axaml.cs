@@ -18,33 +18,20 @@ public partial class Auth : UserControl
     }
 
     
-    private void PasCb_OnChecked(object? sender, RoutedEventArgs e)
-    {
-        PasswordTbx.PasswordChar = '\0';
-    }
-
-    private void PasCb_OnUnchecked(object? sender, RoutedEventArgs e)
-    {
-        PasswordTbx.PasswordChar = '*';
-    }
+    
 
     private void LoginBtn_OnClick(object? sender, RoutedEventArgs e)
     {
-        if (Db.Users.FirstOrDefault(el =>
-                el.Login == LoginTbx.Text) != null)
+        if (Db.Employees.FirstOrDefault(el =>
+                el.Code == LoginTbx.Text) != null)
         {
-            User user = Db.Users.FirstOrDefault(el => el.Login == LoginTbx.Text) as User;
+            
 
-            if (BCrypt.Net.BCrypt.Verify(PasswordTbx.Text, user.Password))
-            {
-                Navigationn.Content = new MainMenu(user.Id);
-            }
+            Navigationn.Content = new MainMenu();
+        
             
         }
     }
 
-    private void RegBtn_OnClick(object? sender, RoutedEventArgs e)
-    {
-        Navigationn.Content = new Registration();
-    }
+    
 }
